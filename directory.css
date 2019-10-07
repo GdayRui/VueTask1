@@ -1,0 +1,64 @@
+.singlepost p {
+  zoom: 1;
+}
+
+.singlepost p::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.singlepost h3 {
+  clear: both;
+  margin-top: 1em;
+}
+
+#directory-filters {
+  background: #e4f4d1;
+  padding: 1em;
+  border: 1px solid #d8e8c4;
+  border-radius: 0.2em;
+}
+
+#directory-filters .group {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+#directory-filters label {
+	padding-right: 0.3em;
+}
+
+#directory-filters input[type=text],
+#directory-filters select {
+  font-family: 'robotolight', Arial, sans-serif;
+  font-size: 108%;
+  padding: 0.25em;
+  border: 1px solid #b3c3a0;
+  background: white;
+  color: #242;
+}
+
+#directory-filters input[type=submit] {
+  font-family: 'robotolight', Arial, sans-serif;
+  font-size: 108%;
+  padding: 0.25em;
+}
+
+/* Transition styles */
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0.01;
+}
