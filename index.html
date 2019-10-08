@@ -23,14 +23,10 @@
 		@import url(directory.css);
 	</style>
 
-	<script type='text/javascript' src='../../../leafandmortar.com/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'>
+	<!--<script type='text/javascript' src='../../../leafandmortar.com/wp-includes/js/jquery/jqueryb8ff.js?ver=1.12.4'>
 	</script>
 	<script type='text/javascript' src='../../../leafandmortar.com/wp-includes/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'>
-	</script>
-	<script type='text/javascript' src='leafandmortar.com/plugins/wpdiy/js/functions68b3.js?ver=1'>
-	</script>
-		<script type='text/javascript' src='ch03-data.js'>
-		</script>
+	</script>-->
 </head>
 <body class="page-template-default page page-id-8">
 <div id="wrapper">
@@ -114,7 +110,14 @@
 					<div class="gutter">
 						<article class="singlepost clearfix">
 
-							<div id="directory-root"></div>
+							<!-- Magic Happens Here -->
+							<div id="directory-root">
+
+								<people-filter ></people-filter>
+								<people-profile :people="people" ></people-profile>
+							
+							</div>
+
 
 							<div class="clear">&nbsp;</div>
 						</article>
@@ -267,20 +270,25 @@
 <!-- .WPDIY-info -->
 	</aside>
 </aside>
-<!-- .super-header -->
+<!-- .super-header 
 <script type='text/javascript' src='../../../leafandmortar.com/wp-content/themes/kage-green/js/main5152.js?ver=1.0'>
-</script>
+</script>-->
 
 <!--
 Polyfills for older browsers
 <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
 <script>window.Promise || document.write('<script src="../../../node_modules/es6-promise/dist/es6-promise.auto.min.js"><\/script>')</script>
 -->
-
+<!--
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>window.Vue || document.write('<script src="../../../node_modules/vue/dist/vue.js"><\/script>')</script>
+-->
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-<script src="../../../assets/ch03-data.js"></script>
+
+
+<script src="ch03-data.js"></script>
 <script src="directory.js"></script>
 
 </body>
